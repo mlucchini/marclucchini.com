@@ -13,13 +13,13 @@ confs = [
 
 def check_args():
     if len(sys.argv) < 2:
-        print 'Usage:', sys.argv[0], 'image_path...'
+        print('Usage:', sys.argv[0], 'image_path...')
         sys.exit(1)
 
 
 def check_dirs():
     if not os.path.isdir('%s/%s' % (root_dir, confs[0]['dir'])):
-        print 'Wrong current directory'
+        print('Wrong current directory')
         sys.exit(1)
 
 
